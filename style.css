@@ -1,0 +1,499 @@
+
+:root{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+
+.error{
+    color: red;
+    position: relative;
+    top: 65%;
+    left: 39%;
+    font-weight: bolder;
+}
+
+
+
+.login{
+   position: fixed;
+  left: 38vw;
+  top: 32vh;
+  font-size: larger;
+  scale: 0.9;
+   
+    
+}
+
+.login.move-up {
+    top: -100%;
+}
+
+#pw{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#username{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#submit{
+    width: 70px;
+    height: 30px;
+background-color: aliceblue;
+border: 0.5px solid black;
+   
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+
+  }
+
+  .attContainer{
+    position: absolute;
+    top: 15vh;
+    left: 1vw;
+}
+
+.move-up{
+    position: absolute;
+    top: -10000px;
+   
+ 
+} 
+ /* move up for attContainer */
+
+.tblCon{
+    position: absolute;
+    top: 25vh;
+    left: 7vw;
+    scale: 1.3;
+}
+
+.move-offscreen{
+    position: relative;
+    top: -10000vh;
+   
+ 
+} 
+
+
+/* css for menu */
+
+:root{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+       
+
+        
+
+        .topbar{
+            background-color: black;
+            position: fixed;
+            height: 9vh;
+            width: 1500px;
+            transition: height 0.5s ease-in-out;
+            margin-top: 0;
+            padding-top: 0;
+            top: -0.2vh;
+           
+            
+          
+        }
+
+        .web-title{
+            color: aliceblue;
+            position: fixed;
+            top:-0.7vh;
+            left: 32vw;
+            
+        }
+
+       
+        .topbar.open{
+            height: 600px;    
+            background-color: black;
+            transition-delay: 0.1s;
+            
+        }
+
+        
+        .lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .line {
+            width: 60px;
+            height: 0.4rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0.2rem;
+        }
+
+        .hamburger-container {
+            width: 3.5rem;
+            height: 3.5rem;
+            position: fixed;
+            top: 0.2rem;
+            left: 1rem;
+            cursor: pointer;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .line {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 90px;
+}
+
+
+
+.nav-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+    visibility: hidden;
+    overflow: hidden;
+    transition: visibility 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    margin: 5%;
+}
+
+.homeI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: url(home.jpeg) no-repeat center center;
+   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.homeI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: url(home.jpeg)no-repeat center center;
+   box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.home-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.g-slamI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(grandslam.jpeg);
+   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.g-slamI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: url(grandslam.jpeg);
+   box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.gslam-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.live-ScoreI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(livescore.jpeg);
+   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.live-ScoreI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(livescore.jpeg);
+   box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+}
+
+.score-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.statsI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(stats2.png) no-repeat center;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%; 
+   position: relative;
+   top: -45%;    
+ 
+}
+
+.statsI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(stats2.png) no-repeat center;
+    box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%; 
+   position: relative;
+   top: -45%;    
+ 
+}
+
+
+
+.stats-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.rankI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(rankings.jpeg) no-repeat center;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+   position: relative;
+   top: -45%; 
+}
+
+.rankI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(rankings.jpeg) no-repeat center;
+    box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%; 
+   position: relative;
+   top: -45%;    
+ 
+}
+
+
+.rank-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.playersI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(players.jpeg) no-repeat center ;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.381);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+   position: relative;
+   top: -45%; 
+  
+}
+
+.playersI:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(players.jpeg) no-repeat center ;
+    box-shadow: inset 0 0 0 1000px rgba(248, 244, 244, 0.887);
+    height: 165px;
+   width: 215px;
+   padding: 5%;  
+   position: relative;
+   top: -45%; 
+}
+
+.players-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: solid;
+}
+
+.attributionsI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 20vh;
+   width: 15vw;
+   padding: 28%;  
+   top: -45%;
+   border: 1px white solid;
+  
+}
+
+.attributionsI:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 20vh;
+   width: 15vw;
+   padding: 28%;  
+   top: -45%;
+   border: 1px rgb(0, 0, 0) solid ;
+  
+}
+
+
+
+
+
+
+.attributions-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+.topbar.open .nav-boxes {
+    visibility: visible;
+    max-height: 1000px;
+    transition-delay: 0.3s;
+}
+
+.topbar:not(.open) .nav-boxes {
+    visibility: hidden;
+    max-height: 0;
+    transition-delay: 0.1s;
+}
+
+.door {
+    position: relative;
+    left: vw;
+    bottom: 5.5vh;
+    height: max-content;
+    width: max-content;
+    color: rgb(237, 237, 237);
+    font-size: 25px;
+   
+}
+
+
+.logout{
+    text-decoration: none !important;
+    position: relative;
+    left: 84.2%; 
+    color: rgb(235, 231, 231);
+    font-weight: lighter;
+    font-size: larger;
+    top: 0.8vh;
+   
+}
+
+
+
+.logoutlink{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    transition: all 0.5s ease-in-out;
+}
+
+.logoutlink::before {
+    content: "\f52a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    right: 0.5vw;
+    top: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.logoutlink:hover::before {
+    content: "\f52b";
+
+   
+}
+
+
+
